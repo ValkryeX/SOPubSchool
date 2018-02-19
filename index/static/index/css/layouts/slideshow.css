@@ -1,0 +1,33 @@
+/*Automatic Slideshow*/
+{% load static %}
+.slide {
+    height: 67%;
+    width: 100%;
+    padding-left: 20%; 
+    padding-right: 20%;
+    margin: auto;
+    margin-top: 8em;
+    display:table;
+}
+
+.slide div {
+    border: 0.5px solid #fff;
+    text-align:center;
+    vertical-align:middle;
+    display:table-cell;
+    color:#fff;
+    font-family:monospace;
+    font-size:3em;
+}
+#slideshow1 {   
+    background: #003300;
+}
+#slideshow2 {   
+    background:#003300;
+}
+#slideshow3 {   
+    background:#003300;
+}
+#slideshow4 {   
+    background:#003300;
+}

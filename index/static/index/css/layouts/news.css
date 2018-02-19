@@ -1,0 +1,19 @@
+
+#container{ 
+  position: relative;
+  color: #b38600;
+  background-color: #003300;
+  width: 100%;
+  margin-top: 40.1em;
+  z-index: 2;
+}
+
+#news_feed{
+  padding: 15px;
+  text-align: left;
+}
+
+#container a {
+  color: white;
+  text-decoration: none;
+}

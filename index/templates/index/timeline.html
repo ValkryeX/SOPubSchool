@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html >
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+      <link rel="stylesheet" href="{% static "index/css/layouts/style.css" %}">
+</head>
+
+<body>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="{% static "index/css/layouts/style.css" %}" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="{% static "index/js/timeline.js" %}"></script>
+  <script>
+    $(function(){
+    			$().timelinr({
+    				arrowKeys: 'true'
+    			})
+    		});
+  </script>
+</head>
+<body>
+
+  <div id="timeline">
+    <ul id="dates">
+      <li><a href="#JAN">JAN</a></li>
+      <li><a href="#FEB">FEB</a></li>
+      <li><a href="#MAR">MAR</a></li>
+      <li><a href="#APR">APR</a></li>
+      <li><a href="#MAY">MAY</a></li>
+      <li><a href="#JUN">JUN</a></li>
+      <li><a href="#JUL">JUL</a></li>
+      <li><a href="#AUG">AUG</a></li>
+      <li><a href="#SEP">SEP</a></li>
+      <li><a href="#OCT">OCT</a></li>
+      <li><a href="#NOV">NOV</a></li>
+      <li><a href="#DEC">DEC</a></li>
+    </ul>
+    <ul id="issues">
+      <li id="JAN">
+
+        <h1>1st JANUARY, 2018</h1>
+        <p>DKN Hotels founded with the acquisition of the Surf Motel Carlsbad, CA</p>
+        <br>
+        <p>Acquisition of the Marco Polo Inn Anaheim, CA (repositioned as: Days Inn)</p>
+      </li>
+
+      <li id="FEB">
+
+        <h1>1987</h1>
+        <p>Acquisition of the Park Vue Anaheim, CA (repositioned as: Econo Lodge)</p>
+      </li>
+      <li id="MAR">
+
+        <h1>1991</h1>
+        <p>Acquisition of the Quality Inn in Ontario, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Construction of the Econo Lodge Flagstaff East, AZ (repositioned as: Days Inn)</p>
+      </li>
+      <li id="APR">
+
+        <h1>1992</h1>
+        <p>Acquisition of the Sandman Inn Anaheim, CA (repositioned as: Ramada Limited)</p>
+      </li>
+      <li id="MAY">
+
+        <h1>1993</h1>
+        <p>Acquisition of the Summer House Inn in San Diego, CA</p>
+      </li>
+      <li id="JUN">
+
+        <h1>1995</h1>
+        <p>Acquisition of the Comfort Inn San Diego (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Harbor Inn Anaheim, CA (repositioned as: Comfort Inn)</p>
+        <br>
+        <p>Construction of the Hampton Inn Flagstaff East (repositioned as: Country Inn & Suites)
+        </p>
+      </li>
+      <li id="JUL">
+
+        <h1>1996</h1>
+        <p>Acquisition of the Travelodge Midway San Diego, CA</p>
+        <br>
+        <p>Acquisition of the Midway Motel in San Diego, CA (repositioned as: Travelodge SeaWorld)</p>
+      </li>
+      <li id="AUG">
+
+        <h1>1997</h1>
+        <p>Acquisition of the Newport Bay Inn in Costa Mesa, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Newport Beach Inn in Newport Beach, CA (repositioned as: Best Western)</p>
+        <br>
+        <p>Acquisition of he Travelodge in San Marcos, CA (repositioned as: Ramada Limited)
+        </p>
+      </li>
+      <li id="SEP">
+
+        <h1>1998</h1>
+        <p>Acquisition of the Days Inn I-40 in Flagstaff, AZ</p>
+        <br>
+        <p>Acquisition of the Days Inn in San Diego, CA (repositioned as: Best Western)</p>
+        <br>
+        <p>Acquisition of the Del Norte Inn in Camarillo, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Quality Inn in Fresno, CA</p>
+        </p>
+      </li>
+      <li id="OCT">
+
+        <h1>1999</h1>
+        <p>Acquisition of the Days Inn Route 66 in Flagstaff, AZ</p>
+        <br>
+        <p>Acquisition of the Quality Suites in San Clemente, CA (repositioned as: Hampton Inn & Suites)</p>
+        <br>
+        <p>Acquisition of the Conestoga Hotel in Anaheim, CA (repositioned as: Holiday Inn & Suites)</p>
+        </p>
+      </li>
+      <li id="NOV">
+
+        <h1>2000</h1>
+        <p>Acquisition of the Best Western Desert Villa Inn in Barstow, CA</p>
+      </li>
+      <li id="DEC">
+
+        <h1>2001</h1>
+        <p>Acquisition of the Newport Classic Inn in Newport Beach, CA (repositioned as: Holiday Inn Express)</p>
+        <br>
+        <p>Acquisition of the Goodnite Inn in Ontario, CA</p>
+        <br>
+        <p>Acquisition of the Laguna Beach Inn in Laguna Beach, CA</p>
+      </li>
+    <div id="grad_left"></div>
+    <div id="grad_right"></div>
+    <a href="#" id="next">+</a>
+    <a href="#" id="prev">-</a>
+  </div>
+
+
+</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="{% static "index/js/timeline.js" %}"></script>
+
+</body>
+</html>

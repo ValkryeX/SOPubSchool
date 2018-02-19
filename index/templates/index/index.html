@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Silver Oak public school Web portal">
+    <title>HOME &ndash; Silver Oak public school</title>
+    <!--JQuery Reference-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="{% static "index/js/menus.js" %}"></script>
+    <!--Local Scripts-->
+    <script type="text/javascript" src="{% static "index/js/news.js" %}"></script>
+    <script type="text/javascript" src="{% static "index/js/slideshow.js" %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        	<link rel="stylesheet" href="{% static "index/css/layouts/news.css" %}">
+            <link rel="stylesheet" href="{% static "index/css/layouts/marketing.css" %}">
+            <link rel="stylesheet" href="{% static "index/css/layouts/slideshow.css" %}">	
+        <!--<![endif]-->
+
+</head>
+<body>
+	{% load static %}
+	<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+    <img  height="25%" width="25%" src="{% static "/index/img/local/logo-1.png" %}">
+        <ul class="pure-menu-info">
+        	<li><a href="contact.html"><i class="fas fa-phone"></i> 8171039999</a><br></li>
+        	<li><a href="contact.html"><i class="far fa-envelope"></i> example@mail.com</a></li>
+        </ul>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><i class="fas fa-home"></i></li>
+            <li class="pure-menu-item"><a href="staf.html" class="pure-menu-link">Staff</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Admission</a></li>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            	<a href="life.html" class="pure-menu-link">Activites</a>
+            	<ul class="pure-menu-children">
+                	<li class="pure-menu-item"><a href="indoor.html" class="pure-menu-link">Indoor Activites</a></li>
+                	<li class="pure-menu-item"><a href="outdoor.html" class="pure-menu-link">Outdoor Education</a></li>
+                </ul>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">School Life</a></li>
+            </li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Parent's Corner</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Gallery</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>
+        </ul>
+    </div>
+	</div>
+<div class="splash-container">
+    <div id="slideshow1" class="slide">
+        <img src="{% static "index/img/local/1.jpg" %}" height="100%" width="100%">
+    </div>
+    <div id="slideshow2" class="slide" style="display: none">
+        <img src="{% static "index/img/local/2.jpg" %}" height="100%" width="100%">
+    </div>
+    <div id="slideshow3" class="slide" style="display: none">
+        <img src="{% static "index/img/local/3.jpg" %}" height="100%" width="100%">
+    </div>
+    <div id="slideshow4" class="slide" style="display: none">
+        <img src="{% static "index/img/local/4.jpg" %}" height="100%" width="100%">
+    </div>
+</div> 
+<div id="container">
+        <p id="news_feed"><strong></strong><span id="suggestions"></span></p>
+		</div>
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Affiliated to the CBSE(10+2) Delhi Curriculum.</h2>
+            <div class="content-head is-center">
+                <h3 class="content-subhead">
+                    <i class="fas fa-graduation-cap"></i>
+                    Our Vision
+                </h3>
+                <p>
+The school galvanizes the intellectual and creative abilities of each student and hopes to equip each to excel in future academic endeavors, and to instill in each a self-reliance and awareness to enable him/her to work through life’s challenges.                </p>
+            </div>
+    </div>     
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="300" alt="File Icons" class="pure-img-responsive" src="{% static "index/img/common/file-icons.png" %}">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+            <h2 class="content-head content-head-ribbon">A word from the principal.</h2>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor."
+            </p>
+        </div>
+    </div>
+    <div class="pure-u-1">
+   	<h2 class="content-head is-center">EVENTS</h2>
+    <iframe src="timeline.html" width="100%" height="450" seamless="seamless" scrolling="no" allow-scripts="yes"></iframe></div>
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+
+                <h4>More Information</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+   
+
+    <div class="footer l-box is-center">
+        Footer - Put some copyright information here!
+    </div>
+ </div>
+</body>
+</html>
